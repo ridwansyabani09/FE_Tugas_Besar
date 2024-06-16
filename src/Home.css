@@ -1,0 +1,23 @@
+/* Home.css */
+
+.home {
+    padding: 20px;
+  }
+  
+  .slider {
+    margin-top: 20px;
+  }
+  
+  .slider-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
