@@ -1,14 +1,13 @@
-// src/App.js
+// App.js
+
 import React from 'react';
-import './App.css';
-import Login from './Login'; // Import komponen Login
+import './App.css'; // Sesuaikan dengan file CSS yang sesuai
+import Login from './Login'; // Sesuaikan dengan path file Login.js
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Login /> {/* Gunakan komponen Login di sini */}
-      </header>
+      <Login />
     </div>
   );
 }
