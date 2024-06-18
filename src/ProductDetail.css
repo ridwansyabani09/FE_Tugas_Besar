@@ -1,0 +1,132 @@
+/* ProductDetail.css */
+
+/* Style for header section (Navbar) */
+header {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar agar konten tidak tertutup */
+    background-color: #333; /* Warna background untuk navbar */
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header .nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header .nav-item {
+    margin-right: 20px;
+  }
+  
+  header .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  header .nav-link:hover {
+    background-color: #555;
+  }
+  
+  /* Style for main content area (Product Detail) */
+  .product-detail {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Menambahkan margin top untuk memberi ruang dengan navbar */
+  }
+  
+  .product-detail img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .product-info {
+    flex-grow: 1;
+  }
+  
+  .product-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-info .price {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .product-info p {
+    margin-bottom: 15px;
+  }
+  
+  .add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for footer section */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .footer .footer-container {
+    max-width: 1200px; /* Mengatur lebar maksimum untuk konten di dalam footer */
+    margin: 0 auto;
+  }
+  
+  .footer .footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .footer-links li {
+    margin: 0 10px;
+  }
+  
+  .footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+  

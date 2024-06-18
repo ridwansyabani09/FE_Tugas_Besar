@@ -1,4 +1,4 @@
-// App.js
+// src/App.js
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -6,6 +6,7 @@ import './App.css'; // Import CSS styles
 import Home from './Home'; // Import Home component
 import Login from './Login'; // Import Login component
 import Cart from './Cart'; // Import Cart component
+import ProductDetail from './ProductDetail'; // Import ProductDetail component
 
 function App() {
   // Data dummy untuk keranjang belanja
@@ -22,6 +23,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart cartItems={dummyCartItems} />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </div>
     </Router>
