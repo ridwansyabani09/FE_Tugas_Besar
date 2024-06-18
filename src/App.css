@@ -1,5 +1,6 @@
 /* App.css */
 
+/* General styles for the entire body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,25 +8,75 @@ body {
   background-color: #ffff; /* warna latar belakang halaman */
 }
 
-.App {
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh; /* Menggunakan seluruh tinggi viewport */
+  max-width: 100%; /* Ubah max-width menjadi 100% untuk navbar */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.container {
-  width: 80%;
-  max-width: 600px; /* Maksimum lebar kontainer */
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer-container {
+  max-width: 100%; /* Ubah max-width menjadi 100% untuk footer */
+  margin: 0 auto;
+}
+
+/* General styles for forms and buttons */
 .header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 .header h1 {

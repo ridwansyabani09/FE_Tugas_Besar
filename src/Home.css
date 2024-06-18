@@ -1,23 +1,201 @@
 /* Home.css */
 
+/* Style for entire page */
 .home {
-    padding: 20px;
-  }
-  
-  .slider {
-    margin-top: 20px;
-  }
-  
-  .slider-image {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Style for header section (Navbar) */
+header {
+  padding-top: 60px; /* Sesuaikan dengan tinggi navbar agar konten tidak tertutup */
+  background-color: #333; /* Warna background untuk navbar */
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-item {
+  margin-right: 20px;
+}
+
+header .nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+header .nav-link:hover {
+  background-color: #555;
+}
+
+/* Style for main content area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style for slider (Carousel) */
+.carousel-root {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 20px; /* Atur margin-bottom sesuai kebutuhan */
+}
+
+.carousel .slide {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Atur padding sesuai kebutuhan */
+}
+
+.carousel .slide img {
+  max-width: 100%; /* Mengatur lebar maksimum gambar */
+  height: auto; /* Menyesuaikan tinggi secara otomatis */
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .control-dots .dot {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel .control-dots .dot.selected {
+  background-color: #fff;
+}
+
+/* Style for products section */
+.products {
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  margin-top: 5px;
+  color: #666;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for footer section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer .footer-container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.footer .footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-links li {
+  margin: 0 10px;
+}
+
+.footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}

@@ -1,9 +1,14 @@
 /* Navbar.css */
 
 .navbar {
-    background-color: #007bff; /* Warna biru untuk navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
     color: #fff;
     padding: 10px 0;
+    z-index: 1000; /* Pastikan z-index cukup tinggi untuk menempatkan navbar di atas konten lain */
   }
   
   .navbar-container {
@@ -15,31 +20,32 @@
     padding: 0 20px;
   }
   
-  .navbar-logo {
+  .logo {
     font-size: 1.5rem;
-  }
-  
-  .navbar-logo-link {
+    font-weight: bold;
     color: #fff;
     text-decoration: none;
   }
   
-  .navbar-menu {
-    list-style-type: none;
+  .nav-menu {
     display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
   
-  .navbar-item {
+  .nav-item {
     margin-right: 20px;
   }
   
-  .navbar-link {
+  .nav-link {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
   }
   
-  .navbar-link:hover {
-    text-decoration: underline;
+  .nav-link:hover {
+    background-color: #555;
   }
   

@@ -1,11 +1,8 @@
-// App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'; // Sesuaikan dengan file CSS yang sesuai
-import Home from './Home'; // Sesuaikan dengan path file Home.js
-import Login from './Login'; // Sesuaikan dengan path file Login.js
-
+import './App.css'; // Import CSS styles
+import Home from './Home'; // Import Home component
+import Login from './Login'; // Import Login component
 function App() {
   return (
     <Router>
@@ -18,5 +15,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
